@@ -80,7 +80,7 @@ ram.runtime = "50M"
     main.url = "/"
 
     [resources.apt]
-    packages = "mariadb-server, php8.4-ctype, php8.4-session, php8.4-xml, php8.4-json, php8.4-pdo, php8.4-pdo_mysql, php8.4-curl, php8.4-ldap, php8.4-mcrypt, php8.4-openssl, php8.4-xml, php8.4-xsl, php8.4-gd, php8.4-zip, php8.4-soap, php8.4-mbstring, php8.4-zlib, php8.4-mysqli, php8.4-sockets, php8.4-iconv, php8.4-xmlreader, perl, imagemagick-dev"
+    packages = "mariadb-server, php8.4-common, php8.4-mysql, php8.4-curl, php8.4-ldap, php8.4-xsl, php8.4-gd, php8.4-zip, php8.4-soap, php8.4-mbstring, php8.4-xml, php8.4-imagick, perl, libmagickwand-dev"
 
     [resources.database]
     # This will automatically provision/deprovison a MySQL DB and store the corresponding credentials in settings $db_user, $db_name, $db_pwd
