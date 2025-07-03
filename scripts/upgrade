@@ -31,7 +31,7 @@ chown -R "$app:www-data" "$install_dir"
 ynh_nodejs_install
 ynh_composer_install
 
-pushd
+pushd $install_dir
   ynh_composer_exec install --no-dev
   npm install
   npm run build
