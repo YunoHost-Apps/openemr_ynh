@@ -33,8 +33,8 @@ ynh_composer_install
 
 pushd $install_dir
   ynh_composer_exec install --no-dev
-  npm install
-  npm run build
+  npm install --loglevel=error
+  npm run build --loglevel=error
 popd
 
 chown -R "$app:www-data" "$install_dir"
