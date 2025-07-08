@@ -12,7 +12,7 @@ version = "7.0.3-3~ynh1"
 maintainers = ["DeMiro5001"]
 
 [upstream]
-license = " GPL-3.0 license"
+license = " GPL-3.0"
 website = "https://www.open-emr.org"
 demo = "https://www.open-emr.org/demo"
 admindoc = "https://www.open-emr.org/wiki/index.php/OpenEMR_Wiki_Home_Page#Installation_Manuals"
