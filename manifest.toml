@@ -7,7 +7,7 @@ name = "OpenEMR"
 description.en = "The most popular open source electronic health records and medical practice management solution."
 description.fr = "La solution de gestion de dossiers de santé électroniques et de cabinet médical open source la plus populaire."
 
-version = "7_0_3_3~ynh1"
+version = "7.0.3-3~ynh1"
 
 maintainers = ["DeMiro5001"]
 
