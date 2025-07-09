@@ -1,1 +1,1 @@
-Ceci est un faux disclaimer à présenter avant l'installation
+L'application nécessite de poursuivre l'installation manuellement.
