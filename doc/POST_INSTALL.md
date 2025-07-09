@@ -1,7 +1,5 @@
-This is a dummy disclaimer to display after the install
+Complete the registration process from the setup page displayed Details for MySQL database to be enterted while registration process:
 
-The app url is <https://__DOMAIN____PATH__>
+Database login: DB_USER Database name: DB_NAME Database password: DB_PWD
 
-The app install dir is `__INSTALL_DIR__`
-
-The app id is `__ID__`
+App url : http://__DOMAIN____PATH__

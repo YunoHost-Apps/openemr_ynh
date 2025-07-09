@@ -1,1 +1,1 @@
-This is a dummy disclaimer to display prior to the install
+The application requires you to continue the installation manually.
