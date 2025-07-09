@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+La solution de gestion de dossiers médicaux électroniques et de cabinet médical open source la plus populaire.
