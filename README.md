@@ -12,7 +12,7 @@ The most popular open source electronic health records and medical practice mana
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.open-emr.org)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://www.open-emr.org/demo)
-[![Version: 7.0.3-3~ynh4](https://img.shields.io/badge/Version-7.0.3--3~ynh4-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/openemr/)
+[![Version: 7.0.3-3~ynh5](https://img.shields.io/badge/Version-7.0.3--3~ynh5-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/openemr/)
 
 <div align="center">
 <a href="https://apps.yunohost.org/app/openemr"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_more_info_on_the_appstore.svg"/></a>
