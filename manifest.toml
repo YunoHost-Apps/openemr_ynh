@@ -7,7 +7,7 @@ name = "OpenEMR"
 description.en = "The most popular open source electronic health records and medical practice management solution."
 description.fr = "La solution de gestion de dossiers de santé électroniques et de cabinet médical open source la plus populaire."
 
-version = "7.0.3-3~ynh4"
+version = "7.0.3-3~ynh5"
 
 maintainers = ["DeMiro5001"]
 
@@ -45,7 +45,7 @@ ram.runtime = "50M"
 
     [install.init_main_permission]
     type = "group"
-    default = "visitors"
+    default = "all_users"
 
     [install.language]
     ask.en = "Choose the application language"
@@ -68,7 +68,7 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/openemr/openemr/archive/refs/tags/v7_0_3_3.tar.gz"
     sha256 = "a4ee83e1f95294af74807ac0a9a238d52e63cc0e42afdcac91c4bd2c00b994c4"
-    autoupdate.strategy = "latest_github_tag"
+    #autoupdate.strategy = "latest_github_tag"
 
     [resources.system_user]
 
