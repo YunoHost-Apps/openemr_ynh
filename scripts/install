@@ -44,6 +44,7 @@ pushd $install_dir
   ynh_hide_warnings ynh_composer_exec install --no-dev
   ynh_hide_warnings npm install --loglevel=error 
   ynh_hide_warnings npm run build --loglevel=error
+  php -f $install_dir/contrib/util/installScripts/InstallerAuto.php no_root_db_access=1 iuser=$admin iuserpass="$password" login=$db_user pass=$db_pwd dbname=$db_name
 popd
 
 chown -R "$app:www-data" "$install_dir"
