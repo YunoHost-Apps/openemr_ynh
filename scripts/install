@@ -19,33 +19,37 @@ ynh_app_setting_set --key=php_upload_max_filesize --value=250M
 ynh_app_setting_set --key=php_post_max_size --value=250M
 
 #=================================================
+# INSTALL DEPENDENCIES
+#=================================================
+ynh_script_progression "Installing dependencies..."
+
+ynh_nodejs_install
+
+#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
 
 ynh_setup_source --dest_dir="$install_dir"
 
-chown -R "$app:www-data" "$install_dir"
-
 #=================================================
-# APP INITIAL CONFIGURATION
+# INSTALL OPENEMR WITH COMPOSER
 #=================================================
-ynh_script_progression "Adding $app's configuration files..."
+ynh_script_progression "Installing $app with Composer..."
 
-#ynh_config_add --template="some_config_file" --destination="$install_dir/some_config_file"
-
-#chmod 400 "$install_dir/some_config_file"
-#chown "$app:$app" "$install_dir/some_config_file"
-
-ynh_nodejs_install
 ynh_composer_install
+ynh_composer_exec install --no-dev
+
+#=================================================
+# FINAL OPENEMR INSTALL
+#=================================================
+ynh_script_progression "Install $app"
 
 pushd $install_dir
-  ynh_hide_warnings ynh_composer_exec install --no-dev
   ynh_hide_warnings npm install --loglevel=error 
   ynh_hide_warnings npm run build --loglevel=error
   ynh_replace --match="exit;" --replace="//exit;" --file="$install_dir/contrib/util/installScripts/InstallerAuto.php"
-  php -f $install_dir/contrib/util/installScripts/InstallerAuto.php no_root_db_access=1 iuser=$admin iuserpass="$password" login=$db_user pass=$db_pwd dbname=$db_name
+  php$php_version -f $install_dir/contrib/util/installScripts/InstallerAuto.php no_root_db_access=1 iuser=$admin iuserpass="$password" login=$db_user pass=$db_pwd dbname=$db_name
   ynh_replace --match="//exit;" --replace="exit;" --file="$install_dir/contrib/util/installScripts/InstallerAuto.php"
 popd
 
