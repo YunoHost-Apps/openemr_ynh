@@ -1,1 +1,1 @@
-La solution de gestion de dossiers médicaux électroniques et de cabinet médical open source la plus populaire.
+OpenEMR est une application de gestion des dossiers médicaux électroniques et des cabinets médicaux. Il propose des dossiers médicaux électroniques entièrement intégrés, la gestion de cabinet, la planification, la facturation électronique, l'internationalisation, une assistance gratuite, une communauté dynamique et bien plus encore.

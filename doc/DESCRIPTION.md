@@ -1,1 +1,1 @@
-The most popular open source electronic health records and medical practice management solution.
+OpenEMR is an electronic health records and medical practice management application. It features fully integrated electronic health records, practice management, scheduling, electronic billing, internationalization, free support, a vibrant community, and a whole lot more.
