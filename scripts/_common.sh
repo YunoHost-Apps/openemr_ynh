@@ -25,7 +25,6 @@ local items=(
         "contrib/portal_templates"
         "contrib/util"
         "contrib/venom"
-        "setup.php"
     )
 
     for item in "${items[@]}"; do
