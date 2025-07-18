@@ -4,8 +4,8 @@ packaging_format = 2
 
 id = "openemr"
 name = "OpenEMR"
-description.en = "The most popular open source electronic health records and medical practice management solution."
-description.fr = "La solution de gestion de dossiers de santé électroniques et de cabinet médical open source la plus populaire."
+description.en = "Electronic health records and medical practice management solution"
+description.fr = "Solution de gestion de dossiers de santé électroniques et de cabinet médical"
 
 version = "7.0.3-3~ynh6"
 
