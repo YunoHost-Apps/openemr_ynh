@@ -68,7 +68,8 @@ ram.runtime = "50M"
     [resources.sources.main]
     url = "https://github.com/openemr/openemr/archive/refs/tags/v7_0_3_3.tar.gz"
     sha256 = "a4ee83e1f95294af74807ac0a9a238d52e63cc0e42afdcac91c4bd2c00b994c4"
-    #autoupdate.strategy = "latest_github_tag"
+    autoupdate.strategy = "latest_github_tag"
+    autoupdate.asset = "^v\d+_\d+_\d+_\d+$"
 
     [resources.system_user]
 
@@ -78,10 +79,13 @@ ram.runtime = "50M"
 
     [resources.permissions]
     main.url = "/"
+    restricted.url = "/admin.php"
+    restricted.additional_urls = ["/admin.php", "/acl_setup.php", "/acl_upgrade.php", "/sl_convert.php", "/sql_patch.php", "/sql_upgrade.php", "/gacl/setup.php", "/ippf_upgrade.php", "/tests", "/contrib/cqm_valueset", "/contrib/dsmiv", "/contrib/forms", "/contrib/portal_templates", "/contrib/util", "/contrib/venom"]
+    restricted.allowed = "admins"
+    restricted.show_tile = false
 
     [resources.apt]
     packages = "mariadb-server, php8.4-common, php8.4-mysql, php8.4-curl, php8.4-ldap, php8.4-xsl, php8.4-gd, php8.4-zip, php8.4-soap, php8.4-mbstring, php8.4-xml, php8.4-imagick, perl, libmagickwand-dev"
 
     [resources.database]
-    # This will automatically provision/deprovison a MySQL DB and store the corresponding credentials in settings $db_user, $db_name, $db_pwd
     type = "mysql"
