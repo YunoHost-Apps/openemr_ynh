@@ -12,6 +12,7 @@ Electronic health records and medical practice management solution
 
 [![🌐 Official app website](https://img.shields.io/badge/Official_app_website-darkgreen?style=for-the-badge)](https://www.open-emr.org)
 [![App Demo](https://img.shields.io/badge/App_Demo-blue?style=for-the-badge)](https://www.open-emr.org/demo)
+
 [![Version: 7.0.3-3~ynh6](https://img.shields.io/badge/Version-7.0.3--3~ynh6-rgba(0,150,0,1)?style=for-the-badge)](https://ci-apps.yunohost.org/ci/apps/openemr/)
 
 <div align="center">
