@@ -49,6 +49,7 @@ ynh_script_progression "Install $app"
 pushd $install_dir
   ynh_hide_warnings npm install --loglevel=error
   ynh_hide_warnings npm run build --loglevel=error
+  post_install_clean
 popd
 
 chown -R "$app:www-data" "$install_dir"
