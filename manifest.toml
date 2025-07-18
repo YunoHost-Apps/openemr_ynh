@@ -80,7 +80,7 @@ ram.runtime = "50M"
     [resources.permissions]
     main.url = "/"
     restricted.url = "/admin.php"
-    restricted.additional_urls = ["/admin.php", "/acl_setup.php", "/acl_upgrade.php", "/sl_convert.php", "/sql_patch.php", "/sql_upgrade.php", "/gacl/setup.php", "/ippf_upgrade.php", "/tests", "/contrib/cqm_valueset", "/contrib/dsmiv", "/contrib/forms", "/contrib/portal_templates", "/contrib/util", "/contrib/venom"]
+    restricted.additional_urls = ["/admin.php", "/acl_setup.php", "/acl_upgrade.php", "/sl_convert.php", "/sql_patch.php", "/sql_upgrade.php", "/gacl/setup.php", "/ippf_upgrade.php", "/tests", "/contrib/cqm_valueset", "/contrib/dsmiv", "/contrib/forms", "/contrib/portal_templates", "/contrib/util", "/contrib/venom", "/setup.php"]
     restricted.allowed = "admins"
     restricted.show_tile = false
 
