@@ -51,6 +51,7 @@ pushd $install_dir
   ynh_replace --match="exit;" --replace="//exit;" --file="$install_dir/contrib/util/installScripts/InstallerAuto.php"
   php$php_version -f $install_dir/contrib/util/installScripts/InstallerAuto.php no_root_db_access=1 iuser=$admin iuserpass="$password" login=$db_user pass=$db_pwd dbname=$db_name
   ynh_replace --match="//exit;" --replace="exit;" --file="$install_dir/contrib/util/installScripts/InstallerAuto.php"
+  post_install_clean
 popd
 
 chown -R "$app:www-data" "$install_dir"
