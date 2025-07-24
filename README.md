@@ -19,6 +19,10 @@ Electronic health records and medical practice management solution
 <a href="https://github.com/YunoHost-Apps/openemr_ynh/issues"><img height="100px" src="https://github.com/YunoHost/yunohost-artwork/raw/refs/heads/main/badges/neopossum-badges/badge_report_an_issue.svg"/></a>
 </div>
 
+
+## Screenshots
+![Screenshot of OpenEMR](./doc/screenshots/Patient_summary_feature.png)
+
 ## 📦 Developer info
 
 [![Automatic tests level](https://apps.yunohost.org/badge/cilevel/openemr)](https://ci-apps.yunohost.org/ci/apps/openemr/)
