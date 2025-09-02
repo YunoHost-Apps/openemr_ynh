@@ -4,9 +4,9 @@
 # COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
 
-nodejs_version="22"
+#REMOVEME? nodejs_version="22"
 
-composer_version="2.8.9"
+#REMOVEME? composer_version="2.8.9"
 
 post_install_clean() {
 local items=(
