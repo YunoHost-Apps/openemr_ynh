@@ -19,13 +19,6 @@ ynh_app_setting_set --key=php_upload_max_filesize --value=250M
 ynh_app_setting_set --key=php_post_max_size --value=250M
 
 #=================================================
-# INSTALL DEPENDENCIES
-#=================================================
-ynh_script_progression "Installing dependencies..."
-
-#REMOVEME? ynh_nodejs_install
-
-#=================================================
 # DOWNLOAD, CHECK AND UNPACK SOURCE
 #=================================================
 ynh_script_progression "Setting up source files..."
@@ -37,7 +30,6 @@ ynh_setup_source --dest_dir="$install_dir"
 #=================================================
 ynh_script_progression "Installing $app with Composer..."
 
-#REMOVEME? ynh_composer_install
 ynh_composer_exec install --no-dev
 
 #=================================================
