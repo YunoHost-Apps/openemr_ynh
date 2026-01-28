@@ -4,10 +4,6 @@
 # COMMON VARIABLES AND CUSTOM HELPERS
 #=================================================
 
-#REMOVEME? nodejs_version="22"
-
-#REMOVEME? composer_version="2.8.9"
-
 post_install_clean() {
 local items=(
         "admin.php"
