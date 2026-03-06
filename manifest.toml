@@ -38,10 +38,6 @@ ram.runtime = "50M"
     [install.domain]
     type = "domain"
 
-    [install.path]
-    type = "path"
-    default = "/openemr"
-
     [install.init_main_permission]
     type = "group"
     default = "all_users"
