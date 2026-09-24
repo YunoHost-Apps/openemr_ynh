@@ -22,7 +22,7 @@ code = "https://github.com/openemr/openemr"
 fund = "https://www.open-emr.org/donate/"
 
 [integration]
-yunohost = ">= 12.1.38"
+yunohost = ">= 12.1.40"
 helpers_version = "2.1"
 architectures = "all"
 multi_instance = true
@@ -92,4 +92,4 @@ ram.runtime = "50M"
     version = "22"
 
     [resources.composer]
-    version = "2.8.11"
+    version = "2.10.3"
